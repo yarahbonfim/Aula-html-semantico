@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Web de Inteligência Artificial</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Dashboard de Inteligência Artificial</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#conceitos">Conceitos</a></li>
+          <li><a href="#chatbot">Chatbot</a></li>
+          <li><a href="#analise">Análise de Texto</a></li>
+          <li><a href="#graficos">Gráficos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Seção Home -->
+    <section id="home" class="hero">
+      <div class="container">
+        <h2>Inteligência Artificial no Seu Dia a Dia</h2>
+        <p>Explore como a IA está transformando o mundo e aprenda seus conceitos fundamentais.</p>
+        <button class="btn btn-primary" onclick="scrollToSection('conceitos')">Explorar IA</button>
+      </div>
+    </section>
+
+    <!-- Seção Conceitos -->
+    <section id="conceitos" class="conceitos">
+      <div class="container">
+        <h2>Conceitos Fundamentais de IA</h2>
+        <div class="cards-grid">
+          <!-- Card 1: Machine Learning -->
+          <div class="card">
+            <h3>🧠 Machine Learning</h3>
+            <p>Algoritmos que aprendem padrões a partir dos dados.</p>
+            <div class="card-details">
+              <strong>Aplicações:</strong>
+              <ul>
+                <li>Recomendações de filmes</li>
+                <li>Detecção de fraudes</li>
+                <li>Diagnósticos médicos</li>
+                <li>Carros autônomos</li>
+              </ul>
+            </div>
+          </div>
+          <!--Card 2: chatbots-->
+          <div class="card">
+            <h3>💭Chatbots</h3>
+            <p>Assistentes virtuais que convrsam com usuário.</p>
+            <div class="detalis">
+              <strong>Benefícios</strong>
+              <ul>
+                <li>Atendimento 24/7</li>
+                <li>Respostas instantâneas</li>
+                <li>Redução do Custos</li>
+                <li>Experiência Personalizada</li>
+                <ul>
+                  <!--Card 3:Reconhecimento de imagens-->
+                  <div class="card">
+                    <h3>👁Reconhecimento de imagens</h3>
+                    <p>Ia que identifica objetos, faces e padrões de imagens</p>
+                    <div class="detalis">
+                      <strong>Usos:</strong>
+                      <ul>
+                        <li>Reconhecimento facial</li>
+                        <li>Diagnósticos</li>
+                        <li>Segurança e vigilancia</li>
+                        <li>Redes sociais</li>
+                      </ul>
+                      <!--Card 4 Processo de linguagem natural-->
+                      <div class="card">
+                        <h3>Processamento de linguagem</h3>
+                        <p>Ia que compreende e gera texto humano.</p>
+                        <div class="detalis">
+                          <strong>📝usos:</strong>
+                          <ul>
+                            <li>tradução automática</li>
+                            <li>Analise de Sentimentos</li>
+                            <li>Resumo de textos</li>
+                            <li>Assistente de voz</li>
+                          </ul>
+                        </div>
+                      </div>
+
+    </section>
+
+    <!--Seção Chatbot-->
+    <section id="chatbot" class="chatbot">
+      <div class="container">
+        <h2>💬Simulador de chatbot</h2>
+        <div class="chatbot-container">
+        <div class="chat-box">
+        <div id="chatMenssages" class="chat-messages">
+        <div class="message bot-message">
+        <p>Olá sou Assistente de iA.Como posso ajudar-lo?</p>
+        </div>
+        </div>
+        </div>
+      </div>
+    <div class="chat-input-area">
+      <input type="text"id="chatinput" placeholder="Digite sua menssagem..."onkeypress="enviarMensagemChat(event)">  
+      <button class="btn btn-primary"onclick="enviarMensagemChat()">enviar</button>
+    </div>
+    </div>
+    </div>
+    </section>
